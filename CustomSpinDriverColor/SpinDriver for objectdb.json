@@ -1,0 +1,160 @@
+    {
+      "InternalName": "SpinDriver",
+      "Name": "SpinDriver",
+      "Notes": "A small star-shaped ring that slings the player upwards or from one place to another when using the Spin Attack nearby.",
+      "Games": 3,
+      "Progress": 2,
+      "Parameters": {
+        "Obj_arg0": {
+          "Name": "Speed / Flight Time",
+          "Type": "Integer",
+          "Games": 3,
+          "Needed": false,
+          "Description": "The speed the sling star slings you at. If a path is assigned, this value is instead used as the time in frames the flight lasts. Default speed is 40, default flight time is 300.",
+          "Values": [],
+          "Exclusives": []
+        },
+        "Obj_arg1": {
+          "Name": "Shadow Length",
+          "Type": "Float",
+          "Games": 3,
+          "Needed": false,
+          "Description": "Sets the shadow drop length.",
+          "Values": [],
+          "Exclusives": []
+        },
+        "Obj_arg2": {
+          "Name": "Player Pull Type",
+          "Type": "Boolean",
+          "Games": 3,
+          "Needed": false,
+          "Description": "Specifies how the player gets pulled into the Launch Star when nearby.",
+          "Values": [
+            {
+              "Value": "-1",
+              "Notes": "Gets pulled into Sling Star"
+            },
+            {
+              "Value": "0",
+              "Notes": "Doesn't get pulled into Sling Star"
+            }
+          ],
+          "Exclusives": []
+        },
+        "Obj_arg3": {
+          "Name": "Camera Count",
+          "Type": "Integer",
+          "Games": 3,
+          "Needed": false,
+          "Description": "The number of event cameras to be used during the flight.",
+          "Values": [],
+          "Exclusives": []
+        },
+        "Obj_arg4": {
+          "Name": "Appearance Jingle",
+          "Type": "Integer",
+          "Games": 3,
+          "Needed": false,
+          "Description": "Specifies how the appearance jingle will be played.",
+          "Values": [
+            {
+              "Value": "-1",
+              "Notes": "Plays appearance jingle"
+            },
+            {
+              "Value": "1",
+              "Notes": "Doesn't play appearance jingle"
+            }
+          ],
+          "Exclusives": []
+        },
+        "Obj_arg5": {
+          "Name": "Player Rotation",
+          "Type": "Float",
+          "Games": 3,
+          "Needed": false,
+          "Description": "The initial rotation of the player used before the player gets launched. This also affects the angle at which the player lands.",
+          "Values": [],
+          "Exclusives": []
+        },
+        "Obj_arg6": {
+          "Name": "Color Frame",
+          "Type": "Integer",
+          "Games": 3,
+          "Needed": false,
+          "Description": "The animation frame to use as the Sling Star color.",
+          "Values": [
+            {
+              "Value": "-1",
+              "Notes": "Yellow"
+            },
+            {
+              "Value": "1",
+              "Notes": "Bronze"
+            },
+            {
+              "Value": "2",
+              "Notes": "Green"
+            },
+            {
+              "Value": "3",
+              "Notes": "Red"
+            },
+            {
+              "Value": "4",
+              "Notes": "Blue"
+            },
+            {
+              "Value": "5",
+              "Notes": "Silver"
+            },
+            {
+              "Value": "6",
+              "Notes": "White"
+            },
+            {
+              "Value": "7",
+              "Notes": "Rainbow"
+            },
+            {
+              "Value": "8",
+              "Notes": "Purple"
+            },
+            {
+              "Value": "9",
+              "Notes": "Pink"
+            }
+          ],
+          "Exclusives": []
+        },
+        "SW_APPEAR": {
+          "Games": 3,
+          "Needed": false,
+          "Description": "Appears when this switch is activated.",
+          "Exclusives": []
+        },
+        "SW_AWAKE": {
+          "Games": 3,
+          "Description": "Enables rendering and resumes updates when this switch is active.",
+          "Exclusives": []
+        },
+        "Rail": {
+          "Games": 3,
+          "Needed": false,
+          "Description": "The path that the player will fly along.",
+          "Exclusives": []
+        },
+        "Camera": {
+          "Games": 3,
+          "Needed": false,
+          "Description": "Used when flying. Multiple camera configurations can be used, the count needs to be specified by Obj_arg3, though. Furthermore, 出現イベント用 is used for appearance.",
+          "Values": [],
+          "Exclusives": []
+        },
+        "BaseMtxFollowTarget": {
+          "Games": 2,
+          "Description": "Can be followed by another BaseMtxFollower object.",
+          "Exclusives": []
+        }
+      }
+    }
