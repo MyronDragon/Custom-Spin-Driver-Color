@@ -2,5 +2,6 @@
   "Name": "Custom Sling Star Colors",
   "Author": "Myron Dragon",
   "Description": "A simple patch that allow custom color on a sling star.",
-  "InstallDependencies": [ "PTUtils", "Syati_Init" ]
+  "InstallDependencies": [ "PTUtils", "Syati_Init" ],
+  "SupportedGames": [ "SB4" ]
 }
